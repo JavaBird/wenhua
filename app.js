@@ -70,4 +70,14 @@ app.use(function(err, req, res, next) {
 });
 
 
+var server = app.listen(3000);
+
+
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : ''
+});
+
 module.exports = app;
