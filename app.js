@@ -8,7 +8,11 @@ var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+
+/*资源管理*/
+var zygl = require('./routes/zygl');
+/*文化大数据库*/
+var whdb = require('./routes/whdb');
 
 var app = express();
 
@@ -30,7 +34,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/zygl', zygl);
+app.use('/whdb',whdb);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
