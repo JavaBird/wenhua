@@ -1,0 +1,123 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'F:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'F:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'semantic-ui',
+1 verbose cli   '--save' ]
+2 info using npm@3.5.3
+3 info using node@v5.4.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData semantic-ui
+8 silly fetchNamedPackageData semantic-ui
+9 silly mapToRegistry name semantic-ui
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/semantic-ui
+13 verbose request uri https://registry.npmjs.org/semantic-ui
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 20:44:39
+16 verbose request id ca902a8387e6e956
+17 verbose etag "42914C9DMXKK01DQ96WRVCXIR"
+18 http request GET https://registry.npmjs.org/semantic-ui
+19 http 304 https://registry.npmjs.org/semantic-ui
+20 verbose headers { date: 'Sun, 10 Apr 2016 12:44:16 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   etag: '"42914C9DMXKK01DQ96WRVCXIR"',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-fra1232-FRA',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1460292256.423641,VS0,VE184',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Sun, 10 Apr 2016 12:44:16 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     etag: '"42914C9DMXKK01DQ96WRVCXIR"',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-fra1232-FRA',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1460292256.423641,VS0,VE184',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose etag https://registry.npmjs.org/semantic-ui from cache
+23 verbose get saving semantic-ui to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\semantic-ui\.cache.json
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule semantic-ui@2.1.8 checking installable status
+37 silly cache add args [ 'semantic-ui', null ]
+38 verbose cache add spec semantic-ui
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'semantic-ui',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'semantic-ui',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed semantic-ui@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for semantic-ui
+42 info addNameTag [ 'semantic-ui', 'latest' ]
+43 silly mapToRegistry name semantic-ui
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/semantic-ui
+47 verbose addNameTag registry:https://registry.npmjs.org/semantic-ui not in flight; fetching
+48 verbose get https://registry.npmjs.org/semantic-ui not expired, no request
+49 silly addNameTag next cb for semantic-ui with tag latest
+50 silly addNamed semantic-ui@2.1.8
+51 verbose addNamed "2.1.8" is a plain semver version for semantic-ui
+52 silly mapToRegistry name semantic-ui
+53 silly mapToRegistry using default registry
+54 silly mapToRegistry registry https://registry.npmjs.org/
+55 silly mapToRegistry uri https://registry.npmjs.org/semantic-ui
+56 verbose addRemoteTarball https://registry.npmjs.org/semantic-ui/-/semantic-ui-2.1.8.tgz not in flight; adding
+57 verbose addRemoteTarball [ 'https://registry.npmjs.org/semantic-ui/-/semantic-ui-2.1.8.tgz',
+57 verbose addRemoteTarball   'fedb85e342ee13c043c244b2b001e11fdb7bebd4' ]
+58 info retry fetch attempt 1 at 20:44:41
+59 info attempt registry request try #1 at 20:44:41
+60 http fetch GET https://registry.npmjs.org/semantic-ui/-/semantic-ui-2.1.8.tgz
+61 http fetch 200 https://registry.npmjs.org/semantic-ui/-/semantic-ui-2.1.8.tgz
+62 silly fetchAndShaCheck shasum fedb85e342ee13c043c244b2b001e11fdb7bebd4
+63 silly rollbackFailedOptional Starting
+64 silly rollbackFailedOptional Finishing
+65 silly runTopLevelLifecycles Starting
+66 silly runTopLevelLifecycles Finishing
+67 silly install printInstalled
+68 verbose stack Error: shasum check failed for C:\Users\ADMINI~1\AppData\Local\Temp\npm-6120-dbbeff75\registry.npmjs.org\semantic-ui\-\semantic-ui-2.1.8.tgz
+68 verbose stack Expected: fedb85e342ee13c043c244b2b001e11fdb7bebd4
+68 verbose stack Actual:   c13882fd50aeac25896cbca2d6087ac2d41bbfb2
+68 verbose stack From:     https://registry.npmjs.org/semantic-ui/-/semantic-ui-2.1.8.tgz
+68 verbose stack     at F:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:25:8
+68 verbose stack     at ReadStream.<anonymous> (F:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:72:7)
+68 verbose stack     at emitNone (events.js:72:20)
+68 verbose stack     at ReadStream.emit (events.js:166:7)
+68 verbose stack     at endReadableNT (_stream_readable.js:905:12)
+68 verbose stack     at nextTickCallbackWith2Args (node.js:474:9)
+68 verbose stack     at process._tickCallback (node.js:388:17)
+69 verbose cwd E:\wenhua
+70 error Windows_NT 6.1.7601
+71 error argv "F:\\Program Files\\nodejs\\node.exe" "F:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "semantic-ui" "--save"
+72 error node v5.4.1
+73 error npm  v3.5.3
+74 error shasum check failed for C:\Users\ADMINI~1\AppData\Local\Temp\npm-6120-dbbeff75\registry.npmjs.org\semantic-ui\-\semantic-ui-2.1.8.tgz
+74 error Expected: fedb85e342ee13c043c244b2b001e11fdb7bebd4
+74 error Actual:   c13882fd50aeac25896cbca2d6087ac2d41bbfb2
+74 error From:     https://registry.npmjs.org/semantic-ui/-/semantic-ui-2.1.8.tgz
+75 error If you need help, you may report this error at:
+75 error     <https://github.com/npm/npm/issues>
+76 verbose exit [ 1, true ]
