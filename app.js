@@ -7,11 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 
-/*****/
-/*资源管理*/
-var zygl = require('./routes/zygl');
-/*文化大数据库*/
-var whdb = require('./routes/whdb');
+
 
 
 var exphbs  = require('express-handlebars');
@@ -21,8 +17,7 @@ var exphbs  = require('express-handlebars');
 var app = express();
 
 app.use('/', routes);
-app.use('/zygl', zygl);
-app.use('/whdb',whdb);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
